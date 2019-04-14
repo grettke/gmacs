@@ -51,3 +51,11 @@
 ;; Issue: Buffer isn't automatically saved.
 ;; Doc: 15.5.2 Controlling Auto-Saving
 (auto-save-visited-mode nil)
+;; Issue: Files don't stay open between start and stop.
+;; Doc: (emacs) Saving Emacs Sessions
+;; Observation: Explanation about frame parameters being
+;;              saved or not is advanced stuff.
+(desktop-save-mode 1)
+(setq desktop-restore-eager 5)
+(add-to-list 'desktop-clear-preserve-buffers ".emacs.el")
+;; - [X] Note: Minibuffer history
