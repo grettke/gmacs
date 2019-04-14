@@ -17,3 +17,11 @@
 ;; - [ ] Note: Keep files open.
 ;; - [ ] Note: Auto save buffer, and on focus change.
 ;; - [ ] Note: yes-or-no-p is too long.
+
+;; Issue: yes-or-no-p is too long.
+;; Doc: 5.8 Yes or No Prompts
+;; Function is used for questions of actions with serious
+;; consequences. So not changing anything.
+;; - [ ] Note: Current column.
+;; - [ ] Note: Linewrap
+
