@@ -1,11 +1,25 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(savehist-additional-variables (quote (command-history kill-ring))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
 ;; Issue: Font is wrong.
 ;; Doc: (emacs) Fonts
 (add-to-list 'default-frame-alist
 	     '(font . "Hack-15"))
-;; - [X] Note: Using GUI to set font not persisted.
+;; - [X] Observation: Using GUI to set font not persisted.
 ;; - [X] Note. M key is wrong.
 
 ;; Issue: Meta keys are wrong.
+;; Doc: (emacs) Mac / GNUstep Basics
 (setq mac-control-modifier 'control)
 (setq mac-right-control-modifier 'left)
 (setq mac-command-modifier 'meta)
@@ -59,3 +73,10 @@
 (setq desktop-restore-eager 5)
 (add-to-list 'desktop-clear-preserve-buffers ".emacs.el")
 ;; - [X] Note: Minibuffer history
+
+;; Issue: Minibuffer history not saved.
+;; Doc: (emacs) Saving Emacs Sessions
+;; Use Customize to choose things to save. Save the options.
+;; Move options to start of file.
+(savehist-mode nil)
+;; - [X] Note: Select buffer painful.
