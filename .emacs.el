@@ -39,3 +39,8 @@
 ;; Doc: (emacs) Optional Mode Line
 (line-number-mode nil)
 ;; - [X] Note: Line numbers starts at 0, not 1
+
+;; Issue: Column starts at 0, not 1.
+;; Doc: (emacs) Optional Mode Line
+(setq column-number-indicator-zero-based nil)
+;; - [X] Note: Other window frequent and hurts.
