@@ -34,3 +34,8 @@
 ;; Doc: (emacs) Optional Mode Line
 (size-indication-mode nil)
 ;; - [X] Note: Line number mode
+
+;; Issue: What is the current line number?
+;; Doc: (emacs) Optional Mode Line
+(line-number-mode nil)
+;; - [X] Note: Line numbers starts at 0, not 1
