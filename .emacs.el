@@ -29,3 +29,8 @@
 ;; Doc: (emacs) Mode Line
 ;; - [X] Note: Size Indication mode 
 ;; - [X] Note: Column Number
+
+;; Issue: How big is this buffer?
+;; Doc: (emacs) Optional Mode Line
+(size-indication-mode nil)
+;; - [X] Note: Line number mode
