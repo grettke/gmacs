@@ -28,8 +28,8 @@
 (setq mac-right-option-modifier 'none)
 (setq mac-function-modifier 'hyper)
 ;; - [ ] Note: Commit to Git.
-;; - [ ] Note: Keep files open.
-;; - [ ] Note: Auto save buffer, and on focus change.
+;; - [X] Note: Keep files open.
+;; - [X] Note: Auto save buffer.
 ;; - [X] Note: yes-or-no-p is too long.
 
 ;; Issue: yes-or-no-p is too long.
