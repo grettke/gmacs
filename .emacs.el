@@ -44,3 +44,7 @@
 ;; Doc: (emacs) Optional Mode Line
 (setq column-number-indicator-zero-based nil)
 ;; - [X] Note: Other window frequent and hurts.
+
+;; Issue: Other window frequent and hurts.
+;; Doc: Copy and paste a function definition.
+(global-set-key (kbd "s-f") #'other-window)
