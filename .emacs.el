@@ -48,3 +48,6 @@
 ;; Issue: Other window frequent and hurts.
 ;; Doc: Copy and paste a function definition.
 (global-set-key (kbd "s-f") #'other-window)
+;; Issue: Buffer isn't automatically saved.
+;; Doc: 15.5.2 Controlling Auto-Saving
+(auto-save-visited-mode nil)
