@@ -22,6 +22,10 @@
 ;; Doc: 5.8 Yes or No Prompts
 ;; Function is used for questions of actions with serious
 ;; consequences. So not changing anything.
-;; - [ ] Note: Current column.
+;; - [X] Note: Current column.
 ;; - [ ] Note: Linewrap
 
+;; Issue: Don't know current column.
+;; Doc: (emacs) Mode Line
+;; - [X] Note: Size Indication mode 
+;; - [X] Note: Column Number
