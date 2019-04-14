@@ -61,10 +61,12 @@
 
 ;; Issue: Other window frequent and hurts.
 ;; Doc: Copy and paste a function definition.
-(global-set-key (kbd "s-f") #'other-window)
+(global-set-key (kbd "s-g") #'other-window)
+
 ;; Issue: Buffer isn't automatically saved.
 ;; Doc: 15.5.2 Controlling Auto-Saving
 (auto-save-visited-mode nil)
+
 ;; Issue: Files don't stay open between start and stop.
 ;; Doc: (emacs) Saving Emacs Sessions
 ;; Observation: Explanation about frame parameters being
@@ -80,3 +82,9 @@
 ;; Move options to start of file.
 (savehist-mode nil)
 ;; - [X] Note: Select buffer painful.
+
+;; Issue: Select buffer painful.
+;; Doc:	 Copy and paste a function definition.
+(global-set-key (kbd "s-f") #'switch-to-buffer)
+(global-set-key (kbd "s-f") #'switch-to-buffer)
+;; Observation: "S-d" Stomps on isearch binding.
