@@ -84,7 +84,5 @@
 ;; - [X] ouch: Select buffer painful.
 
 ;; Issue: Select buffer painful.
-;; Doc:	 Copy and paste a function definition.
+;; Doc: Copy and paste a function definition.
 (global-set-key (kbd "s-f") #'switch-to-buffer)
-(global-set-key (kbd "s-f") #'switch-to-buffer)
-;; Observation: "S-d" Stomps on isearch binding.
