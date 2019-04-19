@@ -12,14 +12,14 @@
  )
 
 ;; Issue: Font is wrong.
-;; Doc: (emacs) Fonts
+;; Manual: (emacs) Fonts
 (add-to-list 'default-frame-alist
 	     '(font . "Hack-15"))
 ;; - [X] ouch: Using GUI to set font not persisted.
 ;; - [X] ouch: M key is wrong.
 
 ;; Issue: Meta keys are wrong.
-;; Doc: (emacs) Mac / GNUstep Basics
+;; Manual: (emacs) Mac / GNUstep Basics
 (setq mac-control-modifier 'control)
 (setq mac-right-control-modifier 'left)
 (setq mac-command-modifier 'meta)
@@ -33,42 +33,42 @@
 ;; - [X] ouch: yes-or-no-p is too long.
 
 ;; Issue: yes-or-no-p is too long.
-;; Doc: 5.8 Yes or No Prompts
+;; Manual: 5.8 Yes or No Prompts
 ;; Function is used for questions of actions with serious
 ;; consequences. So not changing anything.
 ;; - [X] need: Current column.
 ;; - [ ] need: Linewrap
 
 ;; Issue: Don't know current column.
-;; Doc: (emacs) Mode Line
+;; Manual: (emacs) Mode Line
 ;; - [X] disc: Size Indication mode 
 ;; - [X] disc: Column Number
 
 ;; Issue: How big is this buffer?
-;; Doc: (emacs) Optional Mode Line
+;; Manual: (emacs) Optional Mode Line
 (size-indication-mode nil)
 ;; - [X] disc: Line number mode
 
 ;; Issue: What is the current line number?
-;; Doc: (emacs) Optional Mode Line
+;; Manual: (emacs) Optional Mode Line
 (line-number-mode nil)
 ;; - [X] disc: Line numbers starts at 0, not 1
 
 ;; Issue: Column starts at 0, not 1.
-;; Doc: (emacs) Optional Mode Line
+;; Manual: (emacs) Optional Mode Line
 (setq column-number-indicator-zero-based nil)
 ;; - [X] ouch: Other window frequent and hurts.
 
 ;; Issue: Other window frequent and hurts.
-;; Doc: Copy and paste a function definition.
+;; Manual: Copy and paste a function definition.
 (global-set-key (kbd "s-g") #'other-window)
 
 ;; Issue: Buffer isn't automatically saved.
-;; Doc: 15.5.2 Controlling Auto-Saving
+;; Manual: 15.5.2 Controlling Auto-Saving
 (auto-save-visited-mode nil)
 
 ;; Issue: Files don't stay open between start and stop.
-;; Doc: (emacs) Saving Emacs Sessions
+;; Manual: (emacs) Saving Emacs Sessions
 ;; Observation: Explanation about frame parameters being
 ;;              saved or not is advanced stuff.
 (desktop-save-mode 1)
@@ -77,14 +77,14 @@
 ;; - [X] need: Minibuffer history
 
 ;; Issue: Minibuffer history not saved.
-;; Doc: (emacs) Saving Emacs Sessions
+;; Manual: (emacs) Saving Emacs Sessions
 ;; Use Customize to choose things to save. Save the options.
 ;; Move options to start of file.
 (savehist-mode nil)
 ;; - [X] ouch: Select buffer painful.
 
 ;; Issue: Select buffer painful.
-;; Doc: Copy and paste a function definition.
+;; Manual: Copy and paste a function definition.
 (global-set-key (kbd "s-f") #'switch-to-buffer)
 
 ;; - [ ] ouch: Cycling between last most recent buffer painful
@@ -92,7 +92,7 @@
 ;; - [ ] ouch: Previous and next line jump up half the page
 ;; - [ ] need: Remove whitespace at end of line on save
 ;; - [ ] ouch: autosave should save when frame loses focus
-;; = [ ] ouch: Should auto-revert when changes
+;; - [ ] ouch: Should auto-revert when changes
 
 ;; Issue: Replace "Doc:" With "Manual"
 ;; Manual: 12 Searching and Replacement
@@ -102,3 +102,6 @@
 ;;        activating the mark; you can thus use C-u C-SPC
 ;;        or C-x C-x to return to where you were before
 ;;        beginning the search."
+;; - [ ] disc: Section 12.9 [Lax Search], page 109
+;; - [ ] disc: Section 12.9 [Lax Search], page 109
+;; - [ ] disc: Rebind isearch-complete to another key sequence
