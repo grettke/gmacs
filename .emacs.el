@@ -47,7 +47,7 @@
 ;; Issue: How big is this buffer?
 ;; Doc: (emacs) Optional Mode Line
 (size-indication-mode nil)
-;; - [X] need: Line number mode
+;; - [X] disc: Line number mode
 
 ;; Issue: What is the current line number?
 ;; Doc: (emacs) Optional Mode Line
@@ -86,3 +86,11 @@
 ;; Issue: Select buffer painful.
 ;; Doc: Copy and paste a function definition.
 (global-set-key (kbd "s-f") #'switch-to-buffer)
+
+;; - [ ] ouch: Cycling between last most recent buffer painful
+;; - [ ] ouch: Beeping notification
+;; - [ ] ouch: Previous and next line jump up half the page
+;; - [ ] need: Remove whitespace at end of line on save
+;; - [ ] ouch: autosave should save when frame loses focus
+;; = [ ] ouch: Should auto-revert when changes
+
