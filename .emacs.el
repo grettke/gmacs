@@ -94,3 +94,11 @@
 ;; - [ ] ouch: autosave should save when frame loses focus
 ;; = [ ] ouch: Should auto-revert when changes
 
+;; Issue: Replace "Doc:" With "Manual"
+;; Manual: 12 Searching and Replacement
+;; Manual: 12.10 Replacement Commands
+;; disc: "When you exit the incremental search, it adds the
+;;        original value of point to the mark ring, without
+;;        activating the mark; you can thus use C-u C-SPC
+;;        or C-x C-x to return to where you were before
+;;        beginning the search."
