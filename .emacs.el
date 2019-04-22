@@ -12,14 +12,14 @@
  )
 
 ;; Issue: Font is wrong.
-;; Manual: (emacs) Fonts
+;; Manual: 18.8 Fonts
 (add-to-list 'default-frame-alist
 	     '(font . "Hack-15"))
 ;; - [X] ouch: Using GUI to set font not persisted.
 ;; - [X] ouch: M key is wrong.
 
 ;; Issue: Meta keys are wrong.
-;; Manual: (emacs) Mac / GNUstep Basics
+;; Manual: F.1 Basic Emacs usage under macOS and GNUstep
 (setq mac-control-modifier 'control)
 (setq mac-right-control-modifier 'left)
 (setq mac-command-modifier 'meta)
@@ -40,27 +40,27 @@
 ;; - [ ] need: Linewrap
 
 ;; Issue: Don't know current column.
-;; Manual: (emacs) Mode Line
+;; Manual: 1.3 The Mode Line
 ;; - [X] disc: Size Indication mode 
 ;; - [X] disc: Column Number
 
 ;; Issue: How big is this buffer?
-;; Manual: (emacs) Optional Mode Line
+;; Manual: 1.3 The Mode Line
 (size-indication-mode nil)
 ;; - [X] disc: Line number mode
 
 ;; Issue: What is the current line number?
-;; Manual: (emacs) Optional Mode Line
+;; Manual: 14.18 Optional Mode Line Features
 (line-number-mode nil)
 ;; - [X] disc: Line numbers starts at 0, not 1
 
 ;; Issue: Column starts at 0, not 1.
-;; Manual: (emacs) Optional Mode Line
+;; Manual: 14.18 Optional Mode Line Features
 (setq column-number-indicator-zero-based nil)
 ;; - [X] ouch: Other window frequent and hurts.
 
-;; Issue: Other window frequent and hurts.
-;; Manual: Copy and paste a function definition.
+;; Issue: Other window frequently hurts.
+;; Manual: 33.3.6 Rebinding Keys in Your Init File
 (global-set-key (kbd "s-g") #'other-window)
 
 ;; Issue: Buffer isn't automatically saved.
@@ -68,7 +68,7 @@
 (auto-save-visited-mode nil)
 
 ;; Issue: Files don't stay open between start and stop.
-;; Manual: (emacs) Saving Emacs Sessions
+;; Manual: 44 Saving Emacs Sessions
 ;; Observation: Explanation about frame parameters being
 ;;              saved or not is advanced stuff.
 (desktop-save-mode 1)
@@ -77,7 +77,7 @@
 ;; - [X] need: Minibuffer history
 
 ;; Issue: Minibuffer history not saved.
-;; Manual: (emacs) Saving Emacs Sessions
+;; Manual: 44 Saving Emacs Sessions
 ;; Use Customize to choose things to save. Save the options.
 ;; Move options to start of file.
 (savehist-mode nil)
